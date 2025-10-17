@@ -43,34 +43,39 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="happiness">
+   <section class="section" aria-labelledby="about-layout">
+  <div class="about-grid">
+    <div class="left-col">
       <div class="container double">
         <h2 id="happiness">Your happiness matters</h2>
         <p>Sometime people seek counseling because a family member encouraged them to do so. Others seek counseling because the courts ordered them to do so. Others are intuitive enough to know they needs some support and seek counseling for themselves. No matter how you got here you are now giving time and energy to the most important thing in your life, YOU. The decision to start counseling is the most difficult part. You have already begun the process, give us a call to help you make a positive Shift in your life.</p>
       </div>
-    </section>
-
-    <section class="section map-wrap" aria-labelledby="contact">
-      <div class="form-overlay container double" id="contact">
-        <h2>Contact us</h2>
-        <form aria-describedby="contact-help">
-          <p id="contact-help" class="sr-only">Submit your inquiry and we will respond during office hours.</p>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
-          <button class="btn" type="submit" aria-disabled="true" title="Configure form handling to enable">Send (placeholder)</button>
-        </form>
+      <div class="map-wrap">
+        <iframe
+          title="Shift Counseling Services location"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=1170%20Colorado%20Ave,%20Grand%20Junction,%20CO%2081501&output=embed">
+        </iframe>
       </div>
-      <iframe
-        title="Shift Counseling Services location"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=1170%20Colorado%20Ave,%20Grand%20Junction,%20CO%2081501&output=embed">
-      </iframe>
-    </section>
+    </div>
+
+    <aside class="right-col container double" id="contact">
+      <h2>Contact us</h2>
+      <form aria-describedby="contact-help">
+        <p id="contact-help" class="sr-only">Submit your inquiry and we will respond during office hours.</p>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="How can we help?" required></textarea>
+        <button class="btn" type="submit" aria-disabled="true" title="Configure form handling to enable">Send (placeholder)</button>
+      </form>
+    </aside>
+  </div>
+</section>
+
 
   </main>
 
