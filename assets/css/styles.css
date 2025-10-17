@@ -44,9 +44,14 @@ a:hover{ color:var(--neon-soft); }
 }
 .header-top .lets-talk{
   font-family: "OCR-Extended", monospace;
-  letter-spacing: 0.03em;
-  padding:10px 20px;
-  color: var(--text-strong);
+  letter-spacing: 0.05em;
+  padding:14px 24px;
+  font-size: 1.25rem;              /* larger text */
+  font-weight: bold;
+  color: var(--accent-yellow);     /* neon yellow accent */
+  text-shadow: 0 0 6px var(--accent-yellow),
+               0 0 12px var(--accent-yellow),
+               0 0 18px rgba(255,242,0,0.8); /* glowing effect */
 }
 nav{
   display:flex; align-items:center; justify-content:space-between;
