@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(() => update((index + 1) % dots.length), 8000);
 });
 
+  ...
+  <script>
+    document.querySelectorAll('.accordion-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        const panel = btn.nextElementSibling;
+        panel.hidden = expanded;
+      });
+    });
+  </script>
+</body>
+</html>
+
