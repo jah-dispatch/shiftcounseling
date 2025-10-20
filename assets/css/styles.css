@@ -242,3 +242,22 @@ footer small{ color:var(--muted); }
   }
 }
 
+.yellow-heading {
+  color: var(--accent-yellow);
+  font-family: "OCR-Extended", monospace;
+  font-size: 1.3rem;
+  text-shadow: 0 0 6px var(--accent-yellow), 0 0 12px var(--accent-yellow);
+}
+
+.accordion-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+}
+
+.accordion-panel {
+  margin-top: 12px;
+}
