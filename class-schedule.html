@@ -138,6 +138,37 @@
       <small>Grand Junction, CO • © Shift Counseling Services</small>
     </div>
   </footer>
+
+  <script>
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+  const panel = btn.closest('section').querySelector('.accordion-panel');
+
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+
+    if (expanded) {
+      // collapse
+      panel.style.maxHeight = panel.scrollHeight + "px"; // set current height
+      requestAnimationFrame(() => {
+        panel.style.maxHeight = "0px";
+      });
+      panel.addEventListener('transitionend', () => {
+        panel.hidden = true;
+      }, { once: true });
+    } else {
+      // expand
+      panel.hidden = false;
+      panel.style.maxHeight = "0px"; // reset
+      requestAnimationFrame(() => {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      });
+    }
+  });
+});
+</script>
+
+  
 </body>
 </html>
 
