@@ -18,21 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Auto-advance every 8s
-  setInterval(() => update((index + 1) % dots.length), 8000);
-});
-
-  ...
-  <script>
-    document.querySelectorAll('.accordion-toggle').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !expanded);
-        const panel = btn.nextElementSibling;
-        panel.hidden = expanded;
-      });
-    });
-  </script>
-</body>
+ </body>
 </html>
 
