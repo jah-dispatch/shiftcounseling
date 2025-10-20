@@ -249,15 +249,13 @@ footer small{ color:var(--muted); }
   text-shadow: 0 0 6px var(--accent-yellow), 0 0 12px var(--accent-yellow);
 }
 
-.accordion-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  padding: 12px;
+.accordion-panel {
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
 
-.accordion-panel {
-  margin-top: 12px;
+.accordion-panel[hidden] {
+  display: block;   /* keep block for animation, JS will toggle hidden */
+  max-height: 0;    /* collapsed state */
 }
+
