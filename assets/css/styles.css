@@ -259,3 +259,33 @@ footer small{ color:var(--muted); }
   max-height: 0;    /* collapsed state */
 }
 
+details {
+  margin-bottom: 1rem;
+  border: var(--line) solid var(--neon-soft);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.02);
+  transition: background 0.3s ease;
+}
+
+details[open] {
+  background: rgba(255,255,255,0.05);
+}
+
+summary {
+  cursor: pointer;
+  font-family: "OCR-Extended", monospace;
+  font-size: 1.1rem;
+  list-style: none;
+  outline: none;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* hide default triangle */
+}
+
+details p {
+  margin-top: 0.5rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
